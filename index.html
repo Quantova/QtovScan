@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradscan - Home</title>
+    <title>Qtova - Home</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- Bootstrap Icons -->
@@ -22,8 +22,8 @@
     <!-- Header -->
     <header class="main-header">
         <nav class="navbar navbar-expand-lg navbar-main">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">GRAD<span>SCAN</span></a>
+            <div class="container position-relative">
+                <a class="navbar-brand" href="index.html">Qtova</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -44,14 +44,6 @@
                                             class="bi bi-arrow-right"></i></a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="transactionDetails.html">Transactions Details <i
-                                            class="bi bi-arrow-right"></i></a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="blockDetail.html">Block Detail <i
-                                            class="bi bi-arrow-right"></i></a>
-                                </li>
-                                <li>
                                     <a class="dropdown-item" href="pendingTransactions.html">Pending Transactions <i
                                             class="bi bi-arrow-right"></i></a>
                                 </li>
@@ -61,19 +53,48 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="address.html">Address
+                                    <a class="dropdown-item" href="eth2BeaconChainDeposits.html">Beacon Chain Deposits
                                         <i class="bi bi-arrow-right"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="contract.html">Contract
+                                    <a class="dropdown-item" href="beaconChainWithdrawals.html">Beacon Chain Withdrawals
                                         <i class="bi bi-arrow-right"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="tokenHoldings.html">Token Holdings
+                                    <a class="dropdown-item" href="beaconChainWithdrawals.html">View Blobs
                                         <i class="bi bi-arrow-right"></i>
                                     </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="accountAbstraction.html">Account Abstraction
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="blockDetail.html">Block Detail <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="forkedBlocks.html">Forked Blocks <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="transactionDetails.html">Transactions Details <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="uncles.html">Uncles <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="topAccounts.html">TOP ACCOUNTS <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="verifiedContracts.html">Verified Contracts <i
+                                            class="bi bi-arrow-right"></i></a>
                                 </li>
                             </ul>
                         </li>
@@ -83,9 +104,17 @@
                                 Tokens <i class="bi bi-chevron-down"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
+                                <li>
+                                    <a class="dropdown-item" href="topTokens.html"><span>Top Tokens <span
+                                                class="c-gray">(ERC-20)</span></span>
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
+                                <li>
+                                    <a class="dropdown-item" href="tokenTransfers.html"><span>Top Transfers <span
+                                                class="c-gray">(ERC-20)</span></span>
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
                                 </li>
                             </ul>
                         </li>
@@ -95,9 +124,25 @@
                                 NFTs <i class="bi bi-chevron-down"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
+                                <li>
+                                    <a class="dropdown-item" href="topNFTs.html">Top NFTs <i
+                                            class="bi bi-arrow-right"></i></a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
+                                <li>
+                                    <a class="dropdown-item" href="nftTopMints.html">Top Mints <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="nftTrades.html">Latest Trades <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="nftTransfers.html">Latest Transfers <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="nftLatestMints.html">Latest Mints <i
+                                            class="bi bi-arrow-right"></i></a>
                                 </li>
                             </ul>
                         </li>
@@ -107,9 +152,28 @@
                                 Resources <i class="bi bi-chevron-down"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
+                                <li>
+                                    <a class="dropdown-item" href="chartsStats.html">Charts And Stats <i
+                                            class="bi bi-arrow-right"></i></a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
+                                <li>
+                                    <a class="dropdown-item" href="./topStatistics.html">Top Statistics <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./leaderboard.html">Leaderboard <i class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./directory.html">Directory <i
+                                            class="bi bi-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Newsletter <i class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Knowledge Base <i
+                                            class="bi bi-arrow-right"></i></a>
                                 </li>
                             </ul>
                         </li>
@@ -119,36 +183,164 @@
                                 Developers <i class="bi bi-chevron-down"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
+                                <li>
+                                    <a class="dropdown-item" href="codeReader.html">Code Reader <i
+                                            class="bi bi-arrow-right"></i></a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
+                                <li>
+                                    <a class="dropdown-item" href="verifiedContracts.html">Verify Contract <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="tools.html#contract-search-tab">Similar Contracts
+                                        Search
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="smartContractSearch.html">Smart Contract Search <i
+                                            class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="contractDiffChecker.html">Contract Diff Checker
+                                        <i class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="tools.html#vyper-compiler-tab">Vyper Online Compiler
+                                        <i class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="tools.html#bytecode-opcode-tab">Bytecode to Opcode
+                                        <i class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="tools.html#broadcast-transaction-tab">Broadcast
+                                        Transaction
+                                        <i class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./API.html">API Plans <i class="bi bi-arrow-right"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">API Documentation <i
+                                            class="bi bi-arrow-right"></i></a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown" style="position: unset;">
                             <a class="nav-link navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 More <i class="bi bi-chevron-down"></i>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
-                                </li>
+                            <ul class="dropdown-menu moreDropdown">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-12">
+                                        <div class="toolsServices h-100" style="background-color: #151515;">
+                                            <h1>Tools & Services</h1>
+                                            <p>Discover more of Etherscan's tools and services in one place.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4">
+                                        <div class="toolsServices">
+                                            <h1 class="mb-2 ms-sm-2 ms-0">Tools & Services</h1>
+                                            <li>
+                                                <a class="dropdown-item" href="tools.html#input-decoder-tab">Input Data
+                                                    Decoder <i class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="tools.html#unit-converter-tab">Unit
+                                                    Converter <i class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="tools.html#csv-export-tab">CSV Export <i
+                                                        class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="tools.html#account-balance-tab">Account
+                                                    Balance Checker <i class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4">
+                                        <div class="toolsServices">
+                                            <h1 class="mb-2 ms-sm-2 ms-0">Explore</h1>
+                                            <li>
+                                                <a class="dropdown-item" href="gasTracker.html">Gas Tracker <i
+                                                        class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="DEXTracker.html">Dex Tracker <i
+                                                        class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="nodes.html">Node Tracker <i
+                                                        class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="labelWordCloud.html">Label Cloud <i
+                                                        class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="domainNameLookup.html">Domain Name Lookup
+                                                    <i class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4">
+                                        <div class="toolsServices">
+                                            <h1 class="mb-2 ms-sm-2 ms-0">Services</h1>
+                                            <li>
+                                                <a class="dropdown-item" href="tokenApprovals.html">Token Approvals <i
+                                                        class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="verifiedSignatures.html">Verified
+                                                    Singnature <i class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Input Data Messages (IDM) <i
+                                                        class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Advanced Filter <i
+                                                        class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Blockscan Chat <i
+                                                        class="bi bi-arrow-right"></i></a>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
                             </ul>
                         </li>
                     </ul>
                     <div class="navButtons">
                         <div class="borderLine"></div>
+                        <li class="nav-item dropdown" style="list-style: none;">
+                            <a class="nav-link navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-circle-user me-1"></i>
+                                Hussam <i class="bi bi-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="./profile/accountOverview.html">
+                                        Profile Info
+                                        <i class="bi bi-arrow-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                         <a href="./accounts/signUp.html" class="loginButton">Sign in</a>
-                        <div class="themeButtons">
+                        <!-- <div class="themeButtons">
                             <button id="light-toggle" class="theme-btn">
                                 <i class="bi bi-brightness-high" id="sun-icon"></i>
                             </button>
                             <button id="dark-toggle" class="theme-btn active">
                                 <i class="bi bi-moon" id="moon-icon"></i>
                             </button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -160,13 +352,14 @@
             <div class="row">
                 <div class="col-lg-7 col-md-12">
                     <div class="heroContent">
-                        <h1>thE GRADIUM BLOCKCHAIN EXPLORER</h1>
+                        <h1>thE Qtova Blockchain Explorer</h1>
                         <div class="filter-search-wrapper">
                             <div class="dropdown-wrapper">
-                                <button class="filter-dropdown" id="filter-toggle">
-                                    All Filters <i class="fa fa-chevron-down"></i>
+                                <button class="filter-dropdown">
+                                    <span class="filter-text">All Filters</span>
+                                    <i class="fa fa-chevron-down"></i>
                                 </button>
-                                <ul class="dropdown-options" id="filter-options">
+                                <ul class="dropdown-options">
                                     <li>Address</li>
                                     <li>Txn Hash</li>
                                     <li>Block</li>
@@ -174,10 +367,12 @@
                                     <li>Domain Name</li>
                                 </ul>
                             </div>
+
                             <input type="text" class="search-field"
                                 placeholder="Search by Address / Txn Hash / Block / Token / Domain Name">
                             <button class="search-icon-btn"><i class="fa fa-search"></i></button>
                         </div>
+
                     </div>
                     <img src="./assets/images/shadow.png" alt="" class="shadowImg">
                 </div>
@@ -187,35 +382,35 @@
                         <div class="marketCapCont">
                             <div class="row">
                                 <div class="col-6">
-                                    <div class="gradiumText">
+                                    <div class="ExplorerText">
                                         <div class="circle"></div>
-                                        <h6>Gradium</h6>
+                                        <h6>Qtova</h6>
                                     </div>
                                 </div>
                                 <div class="col-6">
-                                    <div class="gradiumText">
+                                    <div class="ExplorerText">
                                         <p>$2,427.65 <span class="red">(-9.22%)</span></p>
                                     </div>
                                 </div>
                                 <div class="col-6 mt-2 pt-1">
-                                    <div class="gradiumText">
+                                    <div class="ExplorerText">
                                         <i class="bi bi-fuel-pump-fill"></i>
                                         <h6>Gas</h6>
                                     </div>
                                 </div>
                                 <div class="col-6 mt-2 pt-1">
-                                    <div class="gradiumText">
+                                    <div class="ExplorerText">
                                         <p class="sky-blue">1.456 Gwei</p>
                                     </div>
                                 </div>
                                 <div class="col-6 mt-2 pt-1">
-                                    <div class="gradiumText">
+                                    <div class="ExplorerText">
                                         <i class="bi bi-fuel-pump-fill opacity-0"></i>
                                         <h6>Market Cap</h6>
                                     </div>
                                 </div>
                                 <div class="col-6 mt-2 pt-1">
-                                    <div class="gradiumText">
+                                    <div class="ExplorerText">
                                         <p>206,427</p>
                                     </div>
                                 </div>
@@ -283,7 +478,7 @@
                                             <i class="bi bi-box"></i>
                                         </div>
                                         <div class="blockContent">
-                                            <a href="#">21923609</a>
+                                            <a href="./blockDetail.html">21923609</a>
                                             <p>10 secs ago</p>
                                         </div>
                                     </div>
@@ -294,10 +489,10 @@
                                             <div class="blockContent">
                                                 <div class="d-flex align-items-center gap-2">
                                                     <h6>Miner</h6>
-                                                    <a href="#">beaverbuild</a>
+                                                    <a href="address.html">beaverbuild</a>
                                                 </div>
                                                 <div class="d-flex align-items-center gap-2 txns2">
-                                                    <a href="#">
+                                                    <a href="transactions.html">
                                                         277 txns
                                                     </a>
                                                     <p>in 12 secs</p>
@@ -730,7 +925,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-8 mt-sm-4 mt-3">
                     <div class="footerDesc">
-                        <h2>Powered by gradium</h2>
+                        <h2>Powered by Qtova Blockchain Explorer</h2>
                         <p>
                             Etherscan is a Block Explorer and Analytics Platform for Ethereum, a
                             decentralized smart contracts platform.
@@ -765,7 +960,7 @@
                         <h2>Products & Services</h2>
                         <a href="#">Advertise</a>
                         <a href="#">Explorer as a Service (EaaS)</a>
-                        <a href="#">API Plans</a>
+                        <a href="./API.html">API Plans</a>
                         <a href="#">Priority Support</a>
                         <div class="d-flex align-items-center gap-2">
                             <a href="#" class="mt-0">Blockscan </a> <i class="bi bi-box-arrow-up-right"></i>
@@ -777,7 +972,7 @@
                 </div>
             </div>
             <div class="footer-bottom-bar">
-                <p>GRADSCAN © 2025 (F1)</p>
+                <p>Qtova © 2025 (F1)</p>
                 <div class="donationPerson">
                     <p>Donations:</p>
                     <a href="#">0x71c765...d8976f</a>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradscan - Token Holdings</title>
+    <title>Qtova - Token Holdings</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- Bootstrap Icons -->
@@ -19,141 +19,333 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="main-header">
-        <nav class="navbar navbar-expand-lg navbar-main">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">GRAD<span>SCAN</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link navLink" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link navLink dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Blockchain <i class="bi bi-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="transactions.html">Transactions <i
-                                            class="bi bi-arrow-right"></i></a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="transactionDetails.html">Transactions Details <i
-                                            class="bi bi-arrow-right"></i></a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="blockDetail.html">Block Detail <i
-                                            class="bi bi-arrow-right"></i></a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="pendingTransactions.html">Pending Transactions <i
-                                            class="bi bi-arrow-right"></i></a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="contractInternalTransactions.html">Contract Internal
-                                        Transactions <i class="bi bi-arrow-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="address.html">Address <i
+<!-- Header -->
+<header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-main">
+        <div class="container position-relative">
+            <a class="navbar-brand" href="index.html">Qtova</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link navLink" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link navLink dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Blockchain <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="transactions.html">Transactions <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="pendingTransactions.html">Pending Transactions <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="contractInternalTransactions.html">Contract Internal
+                                    Transactions <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="eth2BeaconChainDeposits.html">Beacon Chain Deposits
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="beaconChainWithdrawals.html">Beacon Chain Withdrawals
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="beaconChainWithdrawals.html">View Blobs
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="accountAbstraction.html">Account Abstraction
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="blockDetail.html">Block Detail <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="forkedBlocks.html">Forked Blocks <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="transactionDetails.html">Transactions Details <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="uncles.html">Uncles <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="topAccounts.html">TOP ACCOUNTS <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="verifiedContracts.html">Verified Contracts <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Tokens <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="topTokens.html"><span>Top Tokens <span
+                                            class="c-gray">(ERC-20)</span></span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tokenTransfers.html"><span>Top Transfers <span
+                                            class="c-gray">(ERC-20)</span></span>
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            NFTs <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="topNFTs.html">Top NFTs <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="nftTopMints.html">Top Mints <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="nftTrades.html">Latest Trades <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="nftTransfers.html">Latest Transfers <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="nftLatestMints.html">Latest Mints <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Resources <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="chartsStats.html">Charts And Stats <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./topStatistics.html">Top Statistics <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./leaderboard.html">Leaderboard <i class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./directory.html">Directory <i
                                             class="bi bi-arrow-right"></i>
                                     </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="contract.html">Contract
-                                        <i class="bi bi-arrow-right"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="tokenHoldings.html">Token Holdings
-                                        <i class="bi bi-arrow-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Tokens <i class="bi bi-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                NFTs <i class="bi bi-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Resources <i class="bi bi-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Developers <i class="bi bi-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                More <i class="bi bi-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
-                                </li>
-                                <li><a class="dropdown-item" href="#">Lorem... <i class="bi bi-arrow-right"></i></a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="navButtons">
-                        <div class="borderLine"></div>
-                        <a href="./accounts/signUp.html" class="loginButton">Sign in</a>
-                        <div class="themeButtons">
-                            <button id="light-toggle" class="theme-btn">
-                                <i class="bi bi-brightness-high" id="sun-icon"></i>
-                            </button>
-                            <button id="dark-toggle" class="theme-btn active">
-                                <i class="bi bi-moon" id="moon-icon"></i>
-                            </button>
-                        </div>
-                    </div>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Newsletter <i class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Knowledge Base <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Developers <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="codeReader.html">Code Reader <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="verifiedContracts.html">Verify Contract <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tools.html#contract-search-tab">Similar Contracts
+                                    Search
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="smartContractSearch.html">Smart Contract Search <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="contractDiffChecker.html">Contract Diff Checker
+                                    <i class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tools.html#vyper-compiler-tab">Vyper Online Compiler
+                                    <i class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tools.html#bytecode-opcode-tab">Bytecode to Opcode
+                                    <i class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="tools.html#broadcast-transaction-tab">Broadcast
+                                    Transaction
+                                    <i class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./API.html">API Plans <i class="bi bi-arrow-right"></i></a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">API Documentation <i
+                                        class="bi bi-arrow-right"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" style="position: unset;">
+                        <a class="nav-link navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            More <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu moreDropdown">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-12">
+                                    <div class="toolsServices h-100" style="background-color: #151515;">
+                                        <h1>Tools & Services</h1>
+                                        <p>Discover more of Etherscan's tools and services in one place.</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="toolsServices">
+                                        <h1 class="mb-2 ms-sm-2 ms-0">Tools & Services</h1>
+                                        <li>
+                                            <a class="dropdown-item" href="tools.html#input-decoder-tab">Input Data
+                                                Decoder <i class="bi bi-arrow-right"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="tools.html#unit-converter-tab">Unit
+                                                Converter <i class="bi bi-arrow-right"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="tools.html#csv-export-tab">CSV Export <i
+                                                    class="bi bi-arrow-right"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="tools.html#account-balance-tab">Account
+                                                Balance Checker <i class="bi bi-arrow-right"></i></a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="toolsServices">
+                                        <h1 class="mb-2 ms-sm-2 ms-0">Explore</h1>
+                                        <li>
+                                            <a class="dropdown-item" href="gasTracker.html">Gas Tracker <i
+                                                    class="bi bi-arrow-right"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="DEXTracker.html">Dex Tracker <i
+                                                    class="bi bi-arrow-right"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="nodes.html">Node Tracker <i
+                                                    class="bi bi-arrow-right"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="labelWordCloud.html">Label Cloud <i
+                                                    class="bi bi-arrow-right"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="domainNameLookup.html">Domain Name Lookup
+                                                <i class="bi bi-arrow-right"></i></a>
+                                        </li>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4">
+                                    <div class="toolsServices">
+                                        <h1 class="mb-2 ms-sm-2 ms-0">Services</h1>
+                                        <li>
+                                            <a class="dropdown-item" href="tokenApprovals.html">Token Approvals <i
+                                                    class="bi bi-arrow-right"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="verifiedSignatures.html">Verified
+                                                Singnature <i class="bi bi-arrow-right"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Input Data Messages (IDM) <i
+                                                    class="bi bi-arrow-right"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Advanced Filter <i
+                                                    class="bi bi-arrow-right"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Blockscan Chat <i
+                                                    class="bi bi-arrow-right"></i></a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="navButtons">
+                    <div class="borderLine"></div>
+                    <li class="nav-item dropdown" style="list-style: none;">
+                        <a class="nav-link navLink dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-circle-user me-1"></i>
+                            Hussam <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="./profile/accountOverview.html">
+                                    Profile Info
+                                    <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <a href="./accounts/signUp.html" class="loginButton">Sign in</a>
+                    <!-- <div class="themeButtons">
+                        <button id="light-toggle" class="theme-btn">
+                            <i class="bi bi-brightness-high" id="sun-icon"></i>
+                        </button>
+                        <button id="dark-toggle" class="theme-btn active">
+                            <i class="bi bi-moon" id="moon-icon"></i>
+                        </button>
+                    </div> -->
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+</header>
     <div class="hero-margin">
         <div class="container">
             <div class="title-bar d-flex gap-2 justify-content-between align-items-center flex-row title-bar-3">
@@ -162,7 +354,7 @@
                     <h1 class="main-title">Token Holdings</h1>
                     <a href="#" class="blockId blockIDHref"
                         data-copy="0xDe44500b5d1479DF5C003bf48915b3E24Df3e8dD">0xDe44500b5d1479DF5C003bf48915b3E24Df3e8dD</a>
-                    <button class="copy-btn" onclick="copyText(this)">
+                    <button class="copy-btn px-2" onclick="copyText(this)">
                         <img src="./assets/images/copy.svg" class="img-fluid" alt="" onclick="copyText(this)">
                     </button>
                     <div class="bitgetSwap">
@@ -172,7 +364,7 @@
             </div>
             <div class="token-holding-overview">
                 <h3>Overview</h3>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between flex-wrap gap-2">
                     <div class="worth-change-row">
                         <div class="worth-change">
                             <h6>Net Worth in USD</h6>
@@ -205,19 +397,19 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-4 mt-4">
+                <div class="col-lg-4 col-md-6 mt-md-4 mt-3">
                     <div class="token-holding-card">
                         <h6>Assets in Wallet (2)</h6>
                         <p>$29.15</p>
                     </div>
                 </div>
-                <div class="col-4 mt-4">
+                <div class="col-lg-4 col-md-6 mt-md-4 mt-3">
                     <div class="token-holding-card">
                         <h6>NFT Assets (0)</h6>
                         <p>-</p>
                     </div>
                 </div>
-                <div class="col-4 mt-4">
+                <div class="col-lg-4 col-md-6 mt-md-4 mt-3">
                     <div class="token-holding-card">
                         <h6>Liquidity Pool Assets in Wallet (0)</h6>
                         <p>-</p>
@@ -227,7 +419,7 @@
             <div class="token-holding-overview">
                 <h3>Assets in Wallet (2)</h3>
             </div>
-            <div class="moreThanTransaction mt-3">
+            <div class="moreThanTransaction mt-md-3 mt-2">
                 <div class="moreThanTransactionHeader asset-wallet-header">
                     <div class="foundTitle">
                         <h3>$29.15</h3>
@@ -238,12 +430,18 @@
                         <i class="bi bi-search"></i>
                     </div>
                 </div>
-                <div class="table-container px-2">
+                <div class="table-container px-sm-2 px-0">
                     <table class="table transactionTable addressTable m-0">
                         <thead>
                             <tr>
                                 <th>
-                                    <h6>Asset</h6>
+                                    <h6 class="d-flex align-items-center">
+                                        Asset
+                                        <div class="sort-icon">
+                                            <i class="bi bi-caret-up-fill caretUp"></i>
+                                            <i class="bi bi-caret-down-fill caretDown"></i>
+                                        </div>
+                                    </h6>
                                 </th>
                                 <th>
                                     <h6>Symbol</h6>
@@ -252,16 +450,34 @@
                                     <h6>Contract Address</h6>
                                 </th>
                                 <th>
-                                    <h6>Quantity</h6>
+                                    <h6 class="d-flex align-items-center">
+                                        Quantity
+                                        <div class="sort-icon">
+                                            <i class="bi bi-caret-up-fill caretUp"></i>
+                                            <i class="bi bi-caret-down-fill caretDown"></i>
+                                        </div>
+                                    </h6>
                                 </th>
                                 <th>
-                                    <h6>Price</h6>
+                                    <h6 class="d-flex align-items-center">
+                                        Price
+                                        <div class="sort-icon">
+                                            <i class="bi bi-caret-up-fill caretUp"></i>
+                                            <i class="bi bi-caret-down-fill caretDown"></i>
+                                        </div>
+                                    </h6>
                                 </th>
                                 <th>
                                     <h6>Change (24H)</h6>
                                 </th>
                                 <th>
-                                    <h6>Value</h6>
+                                    <h6 class="d-flex align-items-center">
+                                        Value
+                                        <div class="sort-icon">
+                                            <i class="bi bi-caret-up-fill caretUp"></i>
+                                            <i class="bi bi-caret-down-fill caretDown"></i>
+                                        </div>
+                                    </h6>
                                 </th>
                                 <th>
                                 </th>
@@ -288,7 +504,7 @@
                                     <h5>$2,220.02</h5>
                                 </td>
                                 <td>
-                                    <h5>1.56%</h5>
+                                    <h5 class="low-change"><i class="bi bi-caret-down-fill"></i> 1.56%</h5>
                                 </td>
                                 <td>
                                     <h5>$6.42</h5>
@@ -297,9 +513,9 @@
                                     <div class="more-dropdown dropdown">
                                         <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                             aria-expanded="false">
-                                            More <i class="bi bi-chevron-down"></i>
+                                            More <i class="bi bi-chevron-down tableChev"></i>
                                         </a>
-                                        <ul class="dropdown-menu show">
+                                        <ul class="dropdown-menu">
                                             <li>
                                                 <a class="dropdown-item" href="#">Lorem...</a>
                                             </li>
@@ -321,7 +537,12 @@
                                     <h5>HACHI</h5>
                                 </td>
                                 <td>
-                                    <h5>-</h5>
+                                    <div class="transactionHash">
+                                        <div class="d-flex gap-1">
+                                            <img src="./assets/images/list.svg" alt="" width="16" style="width: 12px;">
+                                            <a href="#" class="copyText">0x2a7e415C...aad1EccFe</a>
+                                        </div>
+                                    </div>
                                 </td>
                                 <td>
                                     <h5>026,676,645,089.292294</h5>
@@ -329,8 +550,8 @@
                                 <td>
                                     <h5>$0.00</h5>
                                 </td>
-                                <td>
-                                    <h5>0.75%</h5>
+                                <td >
+                                    <h5 class="high-change"><i class="bi bi-caret-up-fill"></i> 0.75%</h5>
                                 </td>
                                 <td>
                                     <h5>$22.73</h5>
@@ -339,7 +560,7 @@
                                     <div class="more-dropdown dropdown">
                                         <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                             aria-expanded="false">
-                                            More <i class="bi bi-chevron-down"></i>
+                                            More <i class="bi bi-chevron-down tableChev"></i>
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li>
@@ -355,8 +576,98 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="viewallFooter">
-                    <a href="#">View all transactions <i class="bi bi-arrow-right"></i></a>
+                <div class="bottomPagination  footer-border-top">
+                    <div class="showRecords">
+                        <h6>Show:</h6>
+                        <div class="dropdown-wrapper">
+                            <button class="filter-dropdown" id="filter-toggle">
+                                <span class="filter-text">10</span> <i class="fa fa-chevron-down"></i>
+                            </button>
+                            <ul class="dropdown-options" id="filter-options">
+                                <li>20</li>
+                                <li>50</li>
+                            </ul>
+                        </div>
+                        <h6>Records</h6>
+                    </div>
+                    <div class="pagination">
+                        <button id="firstPage" class="page-button" onclick="goToPage(1)" disabled="">First</button>
+                        <button id="prevPage" class="page-button page-icon-button" onclick="changePage(-1)" disabled="">
+                            <i class="bi bi-chevron-left"></i>
+                        </button>
+                        <span class="page-info" id="pageInfo">Page 1 of 1</span>
+                        <button id="nextPage" class="page-button page-icon-button" onclick="changePage(1)">
+                            <i class="bi bi-chevron-right"></i>
+                        </button>
+                        <button id="lastPage" class="page-button active" onclick="goToPage(10000)">Last</button>
+                    </div>
+                </div>
+            </div>
+            <div class="token-holding-overview">
+                <h3>NFT Assets (0)</h3>
+            </div>
+            <div class="moreThanTransaction mt-md-3 mt-2">
+                <div class="no-found-address">
+                    <img src="./assets/images/Overlay+Border.svg" alt="">
+                    <h2>No NFT found for this address.</h2>
+                </div>
+            </div>
+            <div class="token-holding-overview">
+                <h3>Liquidity Pool Assets in Wallet (0)</h3>
+            </div>
+            <div class="moreThanTransaction mt-md-3 mt-2">
+                <div class="table-container">
+                    <table class="table transactionTable addressTable m-0">
+                        <thead>
+                            <tr class="py-2">
+                                <th>
+                                    <h6 class="d-flex align-items-center">
+                                        Asset
+                                        <div class="sort-icon">
+                                            <i class="bi bi-caret-up-fill caretUp"></i>
+                                            <i class="bi bi-caret-down-fill caretDown"></i>
+                                        </div>
+                                    </h6>
+                                </th>
+                                <th>
+                                    <h6>Dex</h6>
+                                </th>
+                                <th>
+                                    <h6>Contract Address</h6>
+                                </th>
+                                <th>
+                                    <h6 class="d-flex align-items-center">
+                                        Quantity
+                                        <div class="sort-icon">
+                                            <i class="bi bi-caret-up-fill caretUp"></i>
+                                            <i class="bi bi-caret-down-fill caretDown"></i>
+                                        </div>
+                                    </h6>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <h5></h5>
+                                </td>
+                                <td>
+                                    <h5></h5>
+                                </td>
+                                <td>
+                                    <h5></h5>
+                                </td>
+                                <td>
+                                    <h5></h5>
+                                </td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                </div>
+                <div class="no-found-address">
+                    <img src="./assets/images/Overlay+Border.svg" alt="">
+                    <h2>No LP found for this address.</h2>
                 </div>
             </div>
             <div class="instructionContent">
@@ -394,7 +705,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-8 mt-sm-4 mt-3">
                     <div class="footerDesc">
-                        <h2>Powered by gradium</h2>
+                        <h2>Powered by Qtova Blockchain Explorer</h2>
                         <p>
                             Etherscan is a Block Explorer and Analytics Platform for Ethereum, a
                             decentralized smart contracts platform.
@@ -429,7 +740,7 @@
                         <h2>Products & Services</h2>
                         <a href="#">Advertise</a>
                         <a href="#">Explorer as a Service (EaaS)</a>
-                        <a href="#">API Plans</a>
+                        <a href="./API.html">API Plans</a>
                         <a href="#">Priority Support</a>
                         <div class="d-flex align-items-center gap-2">
                             <a href="#" class="mt-0">Blockscan </a> <i class="bi bi-box-arrow-up-right"></i>
@@ -441,7 +752,7 @@
                 </div>
             </div>
             <div class="footer-bottom-bar">
-                <p>GRADSCAN © 2025 (F1)</p>
+                <p>Qtova © 2025 (F1)</p>
                 <div class="donationPerson">
                     <p>Donations:</p>
                     <a href="#">0x71c765...d8976f</a>
